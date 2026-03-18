@@ -1,0 +1,11 @@
+{
+  "name": "linkedin-mindmapper",
+  "version": "0.1.0",
+  "description": "Research-driven LinkedIn content ideation for B2B SaaS founders. Deep-dives into a founder's background, conducts adaptive interviews, and generates extensive post ideas organized by content pillar.",
+  "author": {
+    "name": "And/or Labs",
+    "url": "https://andorlabs.ca"
+  },
+  "license": "MIT",
+  "keywords": ["linkedin", "content", "personal-brand", "b2b-saas", "founder"]
+}
