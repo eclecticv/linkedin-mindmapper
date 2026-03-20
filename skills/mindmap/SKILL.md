@@ -1,7 +1,7 @@
 ---
 name: mindmap
 description: This skill should be used when the user asks to "generate LinkedIn post ideas", "mine LinkedIn content ideas", "brainstorm LinkedIn posts for a founder", "build a personal brand content plan", "create a LinkedIn content strategy", "mindmap LinkedIn content", "founder thought leadership content", "personal brand strategy for a founder", mentions "LinkedIn Mindmapper", or wants help with "what should I post on LinkedIn". Conducts deep research and an adaptive interview to generate extensive, personalized LinkedIn post ideas for B2B SaaS founders. This skill generates ideas and prompts, not full post drafts.
-argument-hint: [LinkedIn profile URL]
+argument-hint: [founder name, company name]
 allowed-tools: ["Agent", "AskUserQuestion", "Read", "WebSearch", "WebFetch", "Grep", "Glob", "TaskCreate", "TaskUpdate", "TaskList"]
 ---
 
@@ -21,15 +21,15 @@ The goal: generate as many post ideas as possible WITHOUT diluting the founder's
 
 ## Phase 1: Research
 
-### Collect LinkedIn URL
+### Collect Founder Info
 
-If no URL was provided as an argument, ask via AskUserQuestion:
+If no name/company was provided as an argument, ask via AskUserQuestion:
 
-"To get started, share the LinkedIn profile URL of the founder you want to create a content mindmap for."
+"To get started, who's the founder? Share their name and company (e.g. 'Jane Smith, Acme Corp')."
 
 ### Dispatch Research Agent
 
-Launch the `founder-researcher` agent with the LinkedIn URL. The agent performs autonomous deep research and returns a structured profile covering: career background, company overview, industry context, public content, and interview angles.
+Launch the `founder-researcher` agent with the founder's name and company. The agent performs autonomous deep research and returns a structured profile covering: career background, company overview, industry context, public content, and interview angles.
 
 While the agent works, inform the user:
 

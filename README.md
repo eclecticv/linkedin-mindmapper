@@ -22,7 +22,7 @@ claude --plugin-dir /path/to/linkedin-mindmapper
 ## Usage
 
 ```
-/linkedin:mindmap [LinkedIn profile URL]
+/linkedin:mindmap [founder name, company]
 ```
 
 The skill guides you through the entire process interactively. No long-form writing required — all input is choice-based.
